@@ -10,15 +10,15 @@ puts "Destroying all Channels"
 Channel.destroy_all
 
 puts "Creating Channels"
-Channel.create!(name: "General")
-Channel.create!(name: "React")
-Channel.create!(name: "Paris")
+Channel.create!(name: "general")
+Channel.create!(name: "react")
+Channel.create!(name: "paris")
 puts "Created #{Channel.count} Channels"
 
 puts "Creating Users"
-User.create!(email: "matt@gmail.com", password: "123456")
-User.create!(email: "tom@gmail.com", password: "123456")
-User.create!(email: "john@gmail.com", password: "123456")
+User.create!(email: "matt@gmail.com", password: "123456", username: "Matt")
+User.create!(email: "tom@gmail.com", password: "123456", username: "Tom")
+User.create!(email: "john@gmail.com", password: "123456", username: "John")
 puts "Created #{User.count} Users"
 
 puts "Creating Messages"
