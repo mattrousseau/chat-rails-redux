@@ -4,8 +4,6 @@ class Message < ApplicationRecord
 
   validates :content, presence: true, allow_blank: false
 
-  after_create :as_json
-
   def as_json(options={})
     {
       id: id,
